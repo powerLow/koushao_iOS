@@ -1,0 +1,49 @@
+//
+//  koushao_iOS-Prefix.pch
+//  koushao_iOS
+//
+//  Created by 廖哲琦 on 15/10/12.
+//  Copyright © 2015年 kuaicuhmen. All rights reserved.
+//
+
+#ifndef koushao_iOS_Prefix_pch
+#define koushao_iOS_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #import <ReactiveCocoa/ReactiveCocoa.h>
+    #import <objc/runtime.h>
+    #import <AFNetworking/AFNetworking.h>
+
+    #import "KSUser.h"
+    #import "KSClientApi.h"
+    #import "KSAppDelegate.h"
+    #import "KSConstant.h"
+    #import "KSConfig.h"
+    #import "KSUtil.h"
+    #import "KSMemoryCache.h"
+    #import "KSViewModelServices.h"
+    #import "KSReactiveView.h"
+
+    #import <SDWebImage/UIImageView+WebCache.h>
+    #import <SDWebImage/UIButton+WebCache.h>
+    #import "SSKeychain.h"
+    #import "SSKeychain+KSUtil.h"
+    #import "MBProgressHUD.h"
+    #import "IQKeyboardManager.h"
+    #import "MJExtension.h"
+    #import "TWMessageBarManager.h"
+
+    #import "UMSocial.h"
+    #import "UMSocialWechatHandler.h"
+    #import "UMSocialSinaHandler.h"
+    #import "UMSocialQQHandler.h"
+#endif
+
+
+
+#endif /* koushao_iOS_Prefix_pch */

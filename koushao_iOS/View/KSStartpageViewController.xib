@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSStartpageViewController">
+            <connections>
+                <outlet property="loginWithPhoneBtn" destination="Exc-w7-MAr" id="7aR-L9-ySb"/>
+                <outlet property="loginWithSubAccountBtn" destination="qCa-G8-emE" id="PIU-YK-Zsl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exc-w7-MAr">
+                    <rect key="frame" x="154" y="426" width="75" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="WFO-pD-Eip"/>
+                        <constraint firstAttribute="width" constant="75" id="goK-7M-cv9"/>
+                    </constraints>
+                    <state key="normal" title="手机号登陆"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="WFO-pD-Eip"/>
+                            <exclude reference="goK-7M-cv9"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="WFO-pD-Eip"/>
+                            <include reference="goK-7M-cv9"/>
+                        </mask>
+                    </variation>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCa-G8-emE">
+                    <rect key="frame" x="251" y="426" width="75" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Aaz-8w-g6l"/>
+                        <constraint firstAttribute="width" constant="75" id="GeC-wn-EAv"/>
+                    </constraints>
+                    <state key="normal" title="子账号登陆"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Aaz-8w-g6l"/>
+                            <exclude reference="GeC-wn-EAv"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Aaz-8w-g6l"/>
+                            <include reference="GeC-wn-EAv"/>
+                        </mask>
+                    </variation>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="    |    " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIv-Ny-QLb">
+                    <rect key="frame" x="220" y="431" width="41" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" red="0.72619047619999999" green="0.72619047619999999" blue="0.72619047619999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="whistle_logo_slgn.png" translatesAutoresizingMaskIntoConstraints="NO" id="nYt-Pz-kp1">
+                    <rect key="frame" x="139" y="35" width="202" height="364"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="nYt-Pz-kp1" secondAttribute="height" multiplier="360:649" id="fgO-No-yf6"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="fgO-No-yf6"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="fgO-No-yf6"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nYt-Pz-kp1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-116" id="1Rf-OC-537"/>
+                <constraint firstItem="nYt-Pz-kp1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="7X5-Hv-dDw"/>
+                <constraint firstItem="nIv-Ny-QLb" firstAttribute="leading" secondItem="Exc-w7-MAr" secondAttribute="trailing" constant="-15" id="9Dq-8P-Jup"/>
+                <constraint firstAttribute="trailing" secondItem="nYt-Pz-kp1" secondAttribute="trailing" constant="118" id="9m6-i3-8vF"/>
+                <constraint firstItem="nIv-Ny-QLb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="G1r-IX-TOy"/>
+                <constraint firstAttribute="bottom" secondItem="nIv-Ny-QLb" secondAttribute="bottom" constant="20" id="K7g-G4-TdX"/>
+                <constraint firstItem="nYt-Pz-kp1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LpI-tW-zIA"/>
+                <constraint firstItem="nYt-Pz-kp1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="118" id="OVw-zE-Uco"/>
+                <constraint firstItem="qCa-G8-emE" firstAttribute="leading" secondItem="nIv-Ny-QLb" secondAttribute="trailing" constant="-15" id="fvY-A4-h1o"/>
+                <constraint firstItem="Exc-w7-MAr" firstAttribute="bottom" secondItem="nIv-Ny-QLb" secondAttribute="bottom" id="n8S-bJ-aXQ"/>
+                <constraint firstItem="qCa-G8-emE" firstAttribute="bottom" secondItem="Exc-w7-MAr" secondAttribute="bottom" id="ymY-Md-rru"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1Rf-OC-537"/>
+                    <exclude reference="7X5-Hv-dDw"/>
+                    <exclude reference="9m6-i3-8vF"/>
+                    <exclude reference="LpI-tW-zIA"/>
+                    <exclude reference="OVw-zE-Uco"/>
+                    <exclude reference="n8S-bJ-aXQ"/>
+                    <exclude reference="9Dq-8P-Jup"/>
+                    <exclude reference="G1r-IX-TOy"/>
+                    <exclude reference="K7g-G4-TdX"/>
+                    <exclude reference="fvY-A4-h1o"/>
+                    <exclude reference="ymY-Md-rru"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="1Rf-OC-537"/>
+                    <include reference="7X5-Hv-dDw"/>
+                    <exclude reference="9m6-i3-8vF"/>
+                    <include reference="LpI-tW-zIA"/>
+                    <exclude reference="OVw-zE-Uco"/>
+                    <include reference="n8S-bJ-aXQ"/>
+                    <include reference="9Dq-8P-Jup"/>
+                    <include reference="G1r-IX-TOy"/>
+                    <include reference="K7g-G4-TdX"/>
+                    <include reference="fvY-A4-h1o"/>
+                    <include reference="ymY-Md-rru"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="308.5" y="312.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="whistle_logo_slgn.png" width="360" height="649"/>
+    </resources>
+</document>
